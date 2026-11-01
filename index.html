@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الروضة المحمدية للدارسين</title>
+    <style>
+        :root {
+            --primary-color: #0b4f6c;
+            --secondary-color: #1a73e8;
+            --accent-color: #f1f3f4;
+            --text-color: #333;
+            --light-text: #fff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section-box {
+            background-color: var(--light-text);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .section-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-box h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0d59b2;
+        }
+
+        .badge {
+            background-color: #e8f0fe;
+            color: var(--secondary-color);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مركز الروضة المحمدية للدارسين</h1>
+        <p>نحو مستقبل أفضل بالتعليم ومحو الأمية</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Registration Section -->
+        <div class="section-box">
+            <div class="badge">فتح باب التسجيل</div>
+            <h2>تسجيل الطلبة الجدد</h2>
+            <a href="register.html" class="btn">اضغط هنا للتسجيل</a>
+        </div>
+
+        <!-- Students Section -->
+        <div class="section-box">
+            <h2>قسم الطلبة</h2>
+            <p>متابعة الدروس، الواجبات، والنتائج الدراسية.</p>
+            <a href="login-student.html" class="btn" style="background-color: #1b5e20;">دخول الطلاب</a>
+        </div>
+
+        <!-- Teachers Section -->
+        <div class="section-box">
+            <h2>قسم التدريسيين</h2>
+            <p>إدارة المواد الدراسية، أوقات الدروس، وتقييم الطلاب.</p>
+            <a href="login-staff.html" class="btn" style="background-color: #e65100;">دخول التدريسيين</a>
+        </div>
+
+        <!-- Administration Section -->
+        <div class="section-box">
+            <h2>قسم الإدارة</h2>
+            <p>التحكم الكامل بإعدادات الموقع، البيانات، والصلاحيات.</p>
+            <a href="login-admin.html" class="btn" style="background-color: #790e8fab;">دخول الإدارة</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
